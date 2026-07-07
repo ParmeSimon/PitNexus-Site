@@ -1,13 +1,13 @@
-# PitNexus — vitrine & distribution
+# pitnexus-site — vitrine PitNexus
 
-Repo **public** qui porte toute la présence publique de PitNexus :
+Repo **public** dédié au **site vitrine** de PitNexus ([pitnexus.com](https://pitnexus.com)) —
+source Vite/React à la racine, publié sur **GitHub Pages** via
+[.github/workflows/deploy-site.yml](.github/workflows/deploy-site.yml).
 
-- **Site vitrine** ([pitnexus.com](https://pitnexus.com)) — source Vite/React à la racine,
-  publié sur **GitHub Pages** via [.github/workflows/deploy-site.yml](.github/workflows/deploy-site.yml).
-- **Releases de l'app** — les installeurs Windows signés + `latest.yml` (auto-update
-  electron-updater) sont publiés ici par le pipeline de release du repo de code privé
-  (`ParmeSimon/PitHub`). Ce repo n'a pas besoin de workflow de release ; il n'est que la
-  cible de publication.
+> Le **code de l'app** est dans le repo privé `ParmeSimon/PitHub`.
+> Les **releases** (installeurs + auto-update) sont publiées dans le repo privé
+> `ParmeSimon/PitNexus` (cible déclarée dans `electron-builder.config.cjs` de PitHub) —
+> pas ici.
 
 ## Site — développement
 
@@ -26,9 +26,3 @@ npm run build    # -> dist/ (ce qui est publié sur Pages)
   - `AAAA @` → `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
   - `CNAME www` → `parmesimon.github.io.`
 - Une fois le DNS propagé : cocher **Enforce HTTPS**.
-
-## Releases (auto-update)
-
-La cible est déclarée dans le repo de code (`electron-builder.config.cjs`) :
-`provider: github, owner: ParmeSimon, repo: PitNexus`. Voir `RELEASE.md` dans PitHub
-pour la procédure de publication.
