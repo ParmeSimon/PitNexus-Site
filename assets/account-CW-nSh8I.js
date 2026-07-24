@@ -1,0 +1,1 @@
+const t="pitnexus.site.account";function c(){try{return localStorage.getItem(t)||null}catch{return null}}function n(e){try{e?localStorage.setItem(t,e):localStorage.removeItem(t)}catch{}}export{c as r,n as w};
