@@ -19,23 +19,87 @@
     <title>PitNexus, le stand des pilotes sim</title>
     <meta
       name="description"
-      content="PitNexus réunit ton ingénieur de course IA, ta stratégie d'arrêt, tes plannings d'entraînement, ton journal de bord et ton écurie dans une seule appli, sous un compte pilote unique."
+      content="Gagne plus de courses avec un ingénieur de course IA dans le casque. PitNexus réunit stratégie d'arrêt, télémétrie, entraînement, palmarès et écurie dans une seule appli Windows. Gratuit pour commencer."
     />
-    <meta name="theme-color" content="#08090a" />
+    <meta name="theme-color" content="#17181a" />
+    <style>
+      body { margin: 0; background: #17181a; color: #f4f1ec; font-family: Inter, 'Segoe UI', system-ui, sans-serif; }
+      .static-fallback { max-width: 760px; margin: 0 auto; padding: 120px 24px; line-height: 1.6; }
+      .static-fallback a { color: #ff5a00; }
+    </style>
     <meta property="og:title" content="PitNexus" />
     <meta property="og:description" content="Le stand qui suit chacune de tes courses. Ingénieur IA, stratégie, entraînement, palmarès et écurie." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pitnexus.com" />
-    <script type="module" crossorigin src="./assets/main-CM3J12eW.js"></script>
+    <!-- Données structurées : ce que Google et les moteurs de réponse IA lisent
+         sans exécuter le JS. Prix miroirs de `src/data.js` (PRICING_META). -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PitNexus",
+        "url": "https://pitnexus.com",
+        "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Sim racing",
+        "operatingSystem": "Windows 10, Windows 11",
+        "inLanguage": ["fr", "en", "de", "it", "es", "pt"],
+        "description": "Ingénieur de course IA vocal, stratégie d'arrêt, analyse de télémétrie MoTeC, plannings d'entraînement, palmarès et écurie pour Le Mans Ultimate.",
+        "offers": [
+          { "@type": "Offer", "name": "Gratuit", "price": "0", "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "PitEngineer", "price": "8.99", "priceCurrency": "EUR", "category": "subscription" },
+          { "@type": "Offer", "name": "Pack Pro", "price": "19.99", "priceCurrency": "EUR", "category": "subscription" }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "PitNexus est-il vraiment gratuit ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. PitAssistant, PitPlanner, PitStats, PitTrace et le cœur de PitTeam sont gratuits, sans carte bancaire et sans limite de durée. Seul PitEngineer, l'ingénieur de course IA, est payant." } },
+          { "@type": "Question", "name": "Quelles simulations sont compatibles ?", "acceptedAnswer": { "@type": "Answer", "text": "Le Mans Ultimate, pour l'instant. PitTrace lit aussi les fichiers MoTeC (.ld / .ldx)." } },
+          { "@type": "Question", "name": "Ça tourne sur Mac ou Linux ?", "acceptedAnswer": { "@type": "Answer", "text": "Pas pour l'instant : PitNexus est une appli Windows 10 / 11." } },
+          { "@type": "Question", "name": "Comment je résilie ?", "acceptedAnswer": { "@type": "Answer", "text": "En ligne, depuis ton espace compte, en un clic. Tu gardes l'accès jusqu'à la fin de la période déjà payée." } }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/main-BM-D8Jgu.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/client-DdRh5PVO.js">
-    <link rel="modulepreload" crossorigin href="./assets/styles-DFCfoWgg.js">
+    <link rel="modulepreload" crossorigin href="./assets/styles-BDw6cxOZ.js">
     <link rel="modulepreload" crossorigin href="./assets/account-CLt4pqgQ.js">
     <link rel="modulepreload" crossorigin href="./assets/promoStorage-YCVxpLGz.js">
-    <link rel="stylesheet" crossorigin href="./assets/styles-jSvYwJ3A.css">
+    <link rel="stylesheet" crossorigin href="./assets/styles-BKCawhOE.css">
     <link rel="stylesheet" crossorigin href="./assets/account-rw5GSOmu.css">
-    <link rel="stylesheet" crossorigin href="./assets/main-CYCgYyHt.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-CuLtkYcN.css">
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Contenu statique lu par les robots qui n'exécutent pas le JS (aperçus de
+         liens, certains moteurs, audits automatiques). React le remplace dès le
+         premier rendu (`createRoot().render`). À garder aligné sur le FR de
+         `src/i18n/`. -->
+    <div id="root">
+      <main class="static-fallback">
+        <h1>Gagne plus de courses avec un ingénieur IA dans le casque.</h1>
+        <p>PitNexus réunit ingénieur de course IA, stratégie d'arrêt, télémétrie, entraînement et palmarès dans une seule appli Windows. Tu roules, il s'occupe du reste.</p>
+        <p><a href="https://github.com/ParmeSimon/PitNexus-Releases/releases/latest">Essayer gratuitement</a> · Gratuit · Sans carte bancaire · Windows 10/11</p>
+        <p>Compatible Le Mans Ultimate.</p>
+        <h2>Cinq modules, un compte pilote</h2>
+        <ul>
+          <li><strong>PitEngineer</strong> : ingénieur de course IA qui te parle en direct et débriefe chaque relais.</li>
+          <li><strong>PitAssistant</strong> : stratégie d'arrêt et télémétrie en direct.</li>
+          <li><strong>PitTrace</strong> : analyse MoTeC tour par tour, virage par virage.</li>
+          <li><strong>PitPlanner</strong> : plannings d'entraînement avant un événement.</li>
+          <li><strong>PitStats</strong> : palmarès et journal de bord automatiques.</li>
+          <li><strong>PitTeam</strong> : écurie et classement anti triche basé sur la télémétrie.</li>
+        </ul>
+        <h2>Tarifs</h2>
+        <ul>
+          <li>Gratuit : PitAssistant, PitTrace, PitPlanner, PitStats et PitTeam.</li>
+          <li>PitEngineer : 8,99 € / mois ou 89 € / an.</li>
+          <li>Pack Pro, les quatre modules en Pro : 19,99 € / mois ou 199 € / an.</li>
+        </ul>
+        <p><a href="./shop/">Boutique</a> · <a href="./legal/">Mentions légales</a></p>
+      </main>
+    </div>
   </body>
 </html>
