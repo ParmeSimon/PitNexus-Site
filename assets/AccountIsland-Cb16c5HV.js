@@ -1,0 +1,1 @@
+import{j as t}from"./client-DdRh5PVO.js";import{A as o,a as r}from"./AccountButton-CAQG9fmt.js";import"./firebaseConfig-B9Tx2AU1.js";import"./account-CLt4pqgQ.js";import"./styles-BTBxMaYQ.js";function e(){return t.jsx(o,{children:t.jsx(r,{autoOpen:!0})})}export{e as default};
